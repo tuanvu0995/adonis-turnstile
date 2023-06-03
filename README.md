@@ -2,6 +2,7 @@
 AdonisJS Turnstile is a package that provides a set of tools to secure your AdonisJS applications from bots and spam attacks while also protecting your user's privacy.
 
 [![Release](https://github.com/tuanvu0995/adonis-turnstile/actions/workflows/ci.yml/badge.svg)](https://github.com/tuanvu0995/adonis-turnstile/actions/workflows/ci.yml)
+[![npm version](https://badge.fury.io/js/adonis-turnstile.svg)](https://badge.fury.io/js/adonis-turnstile)
 
 ## Installation
 Install and configure the package in your Adonis project.
