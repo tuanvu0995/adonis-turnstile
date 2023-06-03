@@ -9,6 +9,7 @@ export default class AdonisTurnstileProvider {
 
   private getConfig(): TurnstileConfig {
     const Env = this.app.container.use('Adonis/Core/Env')
+
     return this.app.container.use('Adonis/Core/Config').get('turnstile', {
       siteKey: Env.get('TURNSTILE_SITE_KEY'),
       secretKey: Env.get('TURNSTILE_SECRET_KEY'),
