@@ -1,5 +1,11 @@
 # adonis-turnstile
 
+## 1.0.2
+
+### Patch Changes
+
+- b154730: fix: configure with template not found error
+
 ## 1.0.1
 
 ### Patch Changes
