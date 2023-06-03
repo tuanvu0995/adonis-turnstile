@@ -1,5 +1,11 @@
 # adonis-turnstile
 
+## 1.0.3
+
+### Patch Changes
+
+- adb930a: fix: wrong release flow
+
 ## 1.0.2
 
 ### Patch Changes
