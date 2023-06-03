@@ -6,8 +6,7 @@
   "scripts": {
     "clean": "del build",
     "compile": "npm run lint && npm run clean && tsc && npm run copy:files",
-    "build": "npm run clean && npm run compile",
-    "prerelease": "npm run clean && tsc",
+    "build": "npm run compile",
     "copy:files": "copyfiles \"templates/**/*.txt\" build",
     "test": "node --loader=ts-node/esm bin/test.ts",
     "lint": "eslint . --ext=.ts",

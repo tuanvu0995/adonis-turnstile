@@ -39,7 +39,7 @@ jobs:
         run: npm ci
 
       - name: Pre Release
-        run: npm run prerelease
+        run: npm run build
 
       - name: Create Release PR or Publish to NPM
         id: changesets
