@@ -54,7 +54,6 @@ jobs:
         run: npm run build
 
       - name: Release package
-        if: steps.should-create-tag.outputs.NEW_TAG_EXISTS == 'false'
         uses: changesets/action@v1
         with:
           publish: npm run changeset tag
@@ -62,13 +61,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Extract release notes
-        if: steps.should-create-tag.outputs.NEW_TAG_EXISTS == 'false'
         id: extract-release-notes
         uses: cardinalby/git-get-release-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag: '${{ steps.get-tag-version.outputs.version }}'
+          tag: 'v${{ steps.get-tag-version.outputs.version }}'
           doNotFailIfNotFound: true
 
       - name: Create tag
