@@ -1,6 +1,6 @@
 {
   "name": "adonis-turnstile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./providers/AdonisTurnstileProvider.ts",
   "scripts": {
