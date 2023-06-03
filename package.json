@@ -2,7 +2,7 @@
   "name": "adonis-turnstile",
   "version": "1.0.3",
   "description": "",
-  "main": "./providers/AdonisTurnstileProvider.ts",
+  "main": "./build/providers/AdonisTurnstileProvider.js",
   "scripts": {
     "clean": "del build",
     "compile": "npm run lint && npm run clean && tsc && npm run copy:files",
