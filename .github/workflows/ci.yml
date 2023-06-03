@@ -1,0 +1,42 @@
+name: CI
+on: push
+
+permissions: {}
+
+jobs:
+  ci:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Cache node modules
+        id: cache-npm
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          key: node_modules-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+          path: '**/node_modules'
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Test
+        run: npm run test
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Format
+        run: npm run format
+
+      - name: Build
+        run: npm run build
