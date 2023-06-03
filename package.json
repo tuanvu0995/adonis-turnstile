@@ -73,7 +73,8 @@
     "build/templates",
     "build/instructions.js",
     "build/src",
-    "build/package.json"
+    "build/package.json",
+    "build/templates"
   ],
   "commitlint": {
     "extends": [
