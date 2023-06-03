@@ -13,7 +13,7 @@
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write .",
     "changeset": "changeset",
-    "postinstall": "husky install .husky"
+    "husky": "husky install .husky"
   },
   "keywords": [
     "adonis",
