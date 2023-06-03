@@ -1,5 +1,11 @@
 # adonis-turnstile
 
+## 1.0.4
+
+### Patch Changes
+
+- 363f74f: fix: wrong main file
+
 ## 1.0.3
 
 ### Patch Changes
