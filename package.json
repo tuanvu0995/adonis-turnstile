@@ -1,7 +1,7 @@
 {
   "name": "adonis-turnstile",
   "version": "1.0.4",
-  "description": "",
+  "description": "A Cloudflare Turnstile CAPTCHA package for AdonisJS framework.",
   "main": "./build/providers/AdonisTurnstileProvider.js",
   "scripts": {
     "clean": "del build",

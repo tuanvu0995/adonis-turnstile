@@ -3,6 +3,9 @@ AdonisJS Turnstile is a package that provides a set of tools to secure your Adon
 
 [![Release](https://github.com/tuanvu0995/adonis-turnstile/actions/workflows/ci.yml/badge.svg)](https://github.com/tuanvu0995/adonis-turnstile/actions/workflows/ci.yml)
 [![npm version](https://badge.fury.io/js/adonis-turnstile.svg)](https://badge.fury.io/js/adonis-turnstile)
+[![npm](https://img.shields.io/npm/dt/adonis-turnstile.svg)](https://www.npmjs.com/package/adonis-turnstile)
+[![npm](https://img.shields.io/npm/dm/adonis-turnstile.svg)](https://www.npmjs.com/package/adonis-turnstile)
+[![npm](https://img.shields.io/npm/l/adonis-turnstile.svg)](https://www.npmjs.com/package/adonis-turnstile)
 
 ## Installation
 Install and configure the package in your Adonis project.
